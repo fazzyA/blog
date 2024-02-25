@@ -11,7 +11,7 @@ const BlogList = ({blogs}) => {
               <Card.Title>{item.author}</Card.Title>
               <Card.Text>{item.detail.slice(0, 100)}...</Card.Text>
               <Button variant="primary">
-                <Link to={`/blogs/${item.id}`} className="text-light text-decoration-none ">Read More...</Link>
+                <Link to={`blogs/${item.id}`} className="text-light text-decoration-none ">Read More...</Link>
                 </Button>
             </Card.Body>
           </Card>

@@ -1,9 +1,13 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
+import Header from './Header'
 
 const BlogDetail = () => {
+  const { id } = useParams() 
   return (
     <div>
-      blog detail
+      <Header />
+      blog detail - {id}
     </div>
   )
 }

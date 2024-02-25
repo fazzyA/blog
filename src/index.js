@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './About';
 import ErrorPage from './Error';
+import BlogDetail from './BlogDetail';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
 
   },
+  {
+    path: `/blogs/:id`,
+    element: <BlogDetail />,
+    errorElement: <ErrorPage />
+  },
+
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
