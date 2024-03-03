@@ -2,6 +2,7 @@ import { Button, Card } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 const BlogList = ({blogs}) => {
+  console.log(blogs, "blogsblogsblogsblogs")
   return (
     <div>
       {blogs && blogs.map((item) => (
