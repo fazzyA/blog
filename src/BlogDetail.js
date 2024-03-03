@@ -4,12 +4,14 @@ import Header from './Header'
 import axios from 'axios'
 import { Card } from 'react-bootstrap'
 import { MyContext } from './MyContext'
+import { ThemeContext } from './ThemeContext'
 
 const BlogDetail = () => {
   const { id } = useParams() 
   const [blog, setBlog] = useState({})
-const first = useContext(MyContext)
-console.log("...", first)
+  const first = useContext(MyContext)
+  console.log(first)
+
 
   useEffect(()=>{
     try {

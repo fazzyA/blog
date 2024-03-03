@@ -1,8 +1,12 @@
+import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { MyContext } from './MyContext';
 
 function Header() {
+  const mydata = useContext(MyContext)
+console.log(mydata, "...header")
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>

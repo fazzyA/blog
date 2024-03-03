@@ -1,3 +1,4 @@
 import { createContext } from "react";
 
-export const MyContext = createContext()
+// createcontext provide usecontext
+export const MyContext = createContext();
