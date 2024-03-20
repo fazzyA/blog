@@ -1,0 +1,12 @@
+button {
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+.primary { background-color: rgb(87, 87, 241); }
+.secondary { background-color: rgb(169, 40, 160); }
+.danger { background-color: red; }
+.success { background-color: lightblue; }
+.button-small { font-size: 12; padding: 10px 16px;}
+.button-medium { font-size: 14; padding: 12px 18px;}
+.button-large { font-size: 16; padding: 14px 20px;}
