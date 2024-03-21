@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './About';
 import ErrorPage from './Error';
 import BlogDetail from './BlogDetail';
+import DebounceSearch from './DebounceSearch';
 
 // const router = createBrowserRouter([
 //   {
@@ -40,7 +41,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
-      <App />
+      <DebounceSearch />
   </React.StrictMode>
   
 );
